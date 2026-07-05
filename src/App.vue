@@ -25,6 +25,7 @@ import { ref, computed } from 'vue'
 import Dashboard from './views/Dashboard.vue'
 import StableView from './views/StableView.vue'
 import TrainingArena from './views/TrainingArena.vue'
+import RidingAdventure from './views/RidingAdventure.vue'
 import TournamentHub from './views/TournamentHub.vue'
 import HorseDetail from './views/HorseDetail.vue'
 
@@ -33,6 +34,7 @@ const currentView = ref('dashboard')
 const navItems = [
   { id: 'dashboard', label: '📊 Dashboard' },
   { id: 'stable', label: '🐴 Stall' },
+  { id: 'riding', label: '🌲 Reiten' },
   { id: 'training', label: '🏆 Trainingsarena' },
   { id: 'tournaments', label: '🎪 Turniere' },
 ]
@@ -40,6 +42,7 @@ const navItems = [
 const components = {
   dashboard: Dashboard,
   stable: StableView,
+  riding: RidingAdventure,
   training: TrainingArena,
   tournaments: TournamentHub,
 }
